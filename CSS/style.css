@@ -1,0 +1,80 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+#navBar{
+    display: flex;
+    margin: 20px 39px 19px 28px;
+    position: relative;
+
+
+}
+nav #logo img{
+    width: 50px;
+   margin-left: 20px;
+   margin-top: 3px;
+
+ /* border: 2px solid rebeccapurple; */
+}    
+
+ #navBar ul{
+display: flex;
+
+
+
+}
+#navBar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navBar ul li a{
+   text-decoration: none;
+color: rgb(152, 14, 14);
+   /* We Block the Display so that we Can give padding to it */
+   display: block;
+   padding: 15px 35px ;
+   font-family: monospace;
+   font-weight: bolder;
+   border-radius: 10px;
+
+   
+}
+#navBar ul li a:hover{
+   text-decoration: none;
+   background-color: rgb(124, 172, 66);
+   color:rgb(254, 254, 254);
+
+
+   
+}
+#navBar::before{
+    content: "";
+    position: absolute;
+background-color: rgb(145, 145, 23);
+
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.4;
+border-radius: 20px;
+
+}
+
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+ background: url('../Assets/Pizza.jpeg')no-repeat center center/cover;
+ width: 100%;
+height: 100%;
+opacity: 0.6;
+z-index: -1;
+
+}
