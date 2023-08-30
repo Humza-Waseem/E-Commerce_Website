@@ -167,3 +167,28 @@ text-decoration: none;
 color: #901212;
 
 }
+
+/* Sponsors Section */
+#sponsors .sponsors-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    /* border: 2px solid black; */
+    padding: 10px;
+
+}
+.sponsors-box img {
+    padding: 34px;
+    width: 240px;
+}
+#sponsors::before{
+    content: "";
+    background: url(../Assets/back3.jpeg) no-repeat center center/cover;
+    width: 100%;
+    position:absolute;
+    height: 515px;
+    opacity: 0.8;
+    z-index: -1;
+}
