@@ -1,80 +1,169 @@
-*{
-    margin:0px;
+* {
+    margin: 0px;
     padding: 0px;
 }
-#navBar{
+
+#navBar {
     display: flex;
-    margin: 20px 39px 19px 28px;
+    margin: -1px -1px -31px -2px;
     position: relative;
-
-
+    background-color: black;
+    border-radius: 0px;
 }
-nav #logo img{
+
+#logo img {
     width: 50px;
-   margin-left: 20px;
-   margin-top: 3px;
+    margin-left: 20px;
+    margin-top: 3px;
 
- /* border: 2px solid rebeccapurple; */
-}    
+    /* border: 2px solid rebeccapurple; */
+}
 
- #navBar ul{
-display: flex;
-
+#navBar ul {
+    display: flex;
 
 
 }
+
 #navBar ul li {
     list-style: none;
     font-size: 1.2rem;
 }
-#navBar ul li a{
-   text-decoration: none;
-color: rgb(152, 14, 14);
-   /* We Block the Display so that we Can give padding to it */
-   display: block;
-   padding: 15px 35px ;
-   font-family: monospace;
-   font-weight: bolder;
-   border-radius: 10px;
 
-   
+#navBar ul li a {
+    text-decoration: none;
+    color: rgb(82, 253, 76);
+    /* We Block the Display so that we Can give padding to it */
+    display: block;
+    padding: 17px 57px;
+    font-family: monospace;
+    font-weight: bolder;
+
+    font-size: 20px;
+
+
+
 }
-#navBar ul li a:hover{
-   text-decoration: none;
-   background-color: rgb(124, 172, 66);
-   color:rgb(254, 254, 254);
+
+#navBar ul li a:hover {
+    text-decoration: underline;
+
+    /* background-color: rgb(244, 255, 32); */
+    /* color:rgb(35, 10, 10); */
+    border-radius: 12px;
 
 
-   
+
 }
-#navBar::before{
+
+#navBar::before {
     content: "";
     position: absolute;
-background-color: rgb(145, 145, 23);
 
-width: 100%;
-height: 100%;
-z-index: -1;
-opacity: 0.4;
-border-radius: 20px;
+
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    border-radius: 10px;
 
 }
 
+#navBar .buttons {
+    width: 100px;
+    /* background-color: orange; */
+    color: purple;
 
-#home{
+}
+
+#home {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
+    height: 500px;
 
 }
-#home::before{
+
+#home h1 p {
+    color: rgb(222, 102, 102);
+    text-align: left;
+
+}
+
+#home::before {
     content: "";
     position: absolute;
- background: url('../Assets/Pizza.jpeg')no-repeat center center/cover;
- width: 100%;
-height: 100%;
-opacity: 0.6;
-z-index: -1;
+    background: url('../Assets/back2.jpeg')no-repeat center center/cover;
+    width: 100%;
+    height: 578px;
+    opacity: 0.8;
+    z-index: -12;
+
+
+}
+
+#home h1 {
+    font-family: monospace;
+    font-size: 2.9rem;
+    text-decoration: underline;
+    color: rgb(49, 12, 12);
+    font-size: 3.4rem;
+    padding: 1px 5px;
+    margin: 10px;
+    width: 620px;
+
+}
+
+.primary-heading {
+    font-family: monospace;
+    font-size: 3.8rem;
+    display: block;
+    /* width: 476px; */
+    color: rgb(49, 12, 12);
+    padding: 65px;
+    text-align: center;
+    margin: auto;
+    text-decoration: underline;
+
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+
+}
+
+#services .box {
+    border: 1px solid rgb(122, 82, 82);
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    /* background-color: rgb(168, 189, 189); */
+}
+
+#services .box img {
+    height: 136px;
+    margin: auto;
+    display: block;
+    border: 1px solid black;
+}
+
+#services .box p  {
+    text-decoration: none;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-size: 20px;
+    color: black;
+   
+
+}
+#services  ,h2, .h-secondary-center{
+   
+text-decoration: none;
+color: #901212;
 
 }
